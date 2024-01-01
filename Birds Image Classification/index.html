@@ -15,9 +15,13 @@
       id="image"
       style="width: 400px; height: 400px; margin-bottom: 12px; display: none"
     />
-    <canvas id="my_canvas_id" style="display: none;"></canvas>
+    <canvas id="my_canvas_id" style="display: none"></canvas>
     <form id="predict-form">
-      <input type="file" name="image" />
+      <input
+        type="file"
+        accept="image/png, image/gif, image/jpeg, image/webp"
+        name="image"
+      />
       <input type="submit" value="Predict" />
     </form>
     <div style="padding: 12px 16px" id="prediction"></div>
